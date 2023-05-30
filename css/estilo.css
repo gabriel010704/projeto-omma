@@ -348,3 +348,45 @@ section.contato .container {
     border-color: green;
     cursor: pointer;
 }
+
+
+@media (max-width: 1100px) {
+    /* se o dispositivo tiver no maximo 1100px */
+
+    .container,
+    .container-receita-interna {
+        width: 900px !important;
+        max-width: 100% !important;
+        /* !important sobrescreve outras regras */
+    }
+
+    main section.banner .container {
+        justify-content: flex-start;
+    }
+
+    .lista-receitas article {
+        width: 250px;
+    }
+
+    .container-receita-interna main {
+        width: 500px;
+    }
+
+    .container-receita-interna main iframe {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .container,
+    .container-receita-interna {
+        width: 800px !important;
+        padding: 0 20px;
+    }
+
+    .lista-receitas article {
+        padding: 10px;
+    }
+}
